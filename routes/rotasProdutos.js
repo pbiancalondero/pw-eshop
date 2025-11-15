@@ -7,7 +7,7 @@ const { verificarJWT } = require('../controllers/segurancaController');
 const rotasProdutos = new Router();
 
 rotasProdutos.route('/produto')
-   .get(verificarJWT, getProdutos)
+   .get(getProdutos)
    .post(verificarJWT, addProduto)
    .put(verificarJWT, updateProduto)
 
